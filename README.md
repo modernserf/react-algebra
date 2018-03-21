@@ -6,7 +6,7 @@ A library of combinators for react components with render callbacks.
 
 ## List concatenation
 
-The basic premise of this library is that concatenation and composition are two sides of the same coin. Consider the ways we can think about combining linked lists:
+The basic premise of this library is that concatenation and composition are two sides of the same coin. Consider the ways we can think about combining [linked lists](https://en.wikipedia.org/wiki/Linked_list):
 
 **Concatentation**, i.e. as two lists are joined end-to-end:
 ```haskell
@@ -71,7 +71,7 @@ xs ++ [] == [] ++ xs == xs
 f  .  id == id .  f  == f
 ```
 
-This combination of properties (associativity with an identity element) appears frequently in programming: it also describes addition over numbers with identity 0, multiplication with numbers with identity 1, bools with `or`, `and` and `xor`, sets with union and intersection, and many others. The term for this relationship between type, operation and identity element is called a Monoid.
+This combination of properties (associativity with an identity element) appears frequently in programming: it also describes addition over numbers with identity 0, multiplication with numbers with identity 1, bools with `or`, `and` and `xor`, sets with union and intersection, and many others. The term for this relationship between type, operation and identity element is called a [monoid](https://en.wikibooks.org/wiki/Haskell/Monoids).
 
 A property of all monoids is that the operation works well in folds. A lot of useful functions are just folds over monoids:
 

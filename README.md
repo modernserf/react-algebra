@@ -209,7 +209,7 @@ let Z = ({ children }) =>
 
 ## Props and Render Callbacks
 
-There are two additional questions we need to resolve before we can apply this algebra to React. How do we handle props? React components typically have arguments besides `children`, which complicate component composition. How would we pass props to the child components? One approach is to pass all props to all components:
+Before we can apply this algebra to actual React code, we need to answer: how do we handle props? React components typically take many arguments besides `children`; 'normal' function composition isn't sufficient. How would we pass props to the child components? One approach is to pass all props to all components:
 
 ```js
 const X = ({ foo, bar, children }) =>
